@@ -17,6 +17,7 @@ import AddAService from './components/AddAService/AddAService';
 import Reviews from './components/Reviews/Reviews';
 import WriteReview from './components/WriteReview/WriteReview';
 import Payment from './components/Payment/Payment';
+import Orders from './components/Orders/Orders';
 
 function App() {
   return (
@@ -52,6 +53,10 @@ function App() {
 
             <PrivateRoute path="/payment">
               <Payment></Payment>
+            </PrivateRoute>
+
+            <PrivateRoute path="/orders">
+              <Orders></Orders>
             </PrivateRoute>
 
             <PrivateRoute exact path="/placeorder">
